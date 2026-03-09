@@ -71,12 +71,25 @@ git push brain-app main
 
 ---
 
-## 5. (Optional) Point portfolio deployments here
+## 5. Switch existing portfolio deployments to this repo
 
-If you want your existing Render/Vercel services for the portfolio to stop serving the brain app and instead serve from this repo:
+If you already have Render and Vercel services pointing at your portfolio repo (AI_ML-Portfolio) and want them to serve the brain app from this clean repo instead:
 
-- **Render:** Create a *new* Web Service linked to brain-tumor-ai-app, or change the existing one’s connected repo and settings. The old portfolio backend can remain for other projects.
-- **Vercel:** Create a *new* project for brain-tumor-ai-app. Your portfolio site can stay as a separate project.
+**Render**
+1. Open your existing brain-mri-api (or portfolio) Web Service
+2. **Settings** → **Build & Deploy**
+3. **Repository** → **Connect repository** → Choose **brain-tumor-ai-app**
+4. **Root Directory:** Leave empty
+5. **Build / Start:** Keep `pip install -r requirements.txt` and `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
+6. **Save** — Render will redeploy from the new repo
+
+**Vercel**
+1. Open your existing brain app project (or create new)
+2. **Settings** → **Git**
+3. Change connected repository to **brain-tumor-ai-app**
+4. **Root Directory:** `frontend`
+5. **Environment Variables:** Set `VITE_API_URL` to your Render backend URL
+6. **Redeploy** from the Deployments tab
 
 ---
 
