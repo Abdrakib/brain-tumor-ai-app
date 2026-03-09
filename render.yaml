@@ -1,0 +1,10 @@
+# Render.com Web Service configuration
+# https://render.com/docs/blueprint-spec
+
+services:
+  - type: web
+    name: brain-mri-api
+    runtime: python
+
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
