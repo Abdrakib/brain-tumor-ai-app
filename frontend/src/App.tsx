@@ -45,7 +45,7 @@ function validateImageDimensions(src: string): Promise<string | null> {
   })
 }
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000'
+const API_BASE = import.meta.env.VITE_API_URL || 'https://ai-ml-portfolio-2pio.onrender.com'
 
 function App() {
   const [file, setFile] = useState<File | null>(null)
