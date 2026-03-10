@@ -168,3 +168,4 @@ MIT — See [LICENSE](LICENSE) for details.
 ## Author
 
 **Abdrakib** — [GitHub](https://github.com/Abdrakib)
+Update deployement trigger
