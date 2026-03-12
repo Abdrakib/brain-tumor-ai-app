@@ -84,11 +84,11 @@ If you already have Render and Vercel services pointing at your portfolio repo (
 6. **Save** — Render will redeploy from the new repo
 
 **Vercel**
-1. Open your existing brain app project (or create new)
+1. Open your existing brain app project (e.g. ai-ml-portfolio-theta)
 2. **Settings** → **Git**
 3. Change connected repository to **brain-tumor-ai-app**
-4. **Root Directory:** `frontend`
-5. **Environment Variables:** Set `VITE_API_URL` to your Render backend URL
+4. **Root Directory:** Leave empty (vercel.json builds from frontend)
+5. **Environment Variables:** Set `VITE_API_URL` to your Render backend URL (e.g. https://ai-ml-portfolio-2pio.onrender.com)
 6. **Redeploy** from the Deployments tab
 
 ---
