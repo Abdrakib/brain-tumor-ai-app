@@ -1,6 +1,6 @@
 # Brain MRI AI — Tumor Classification with Grad-CAM
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-View_App-success?style=for-the-badge)](#)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-View_App-success?style=for-the-badge)](https://ai-ml-portfolio-theta.vercel.app)
 
 Production-ready AI application for brain tumor classification from MRI images, featuring explainable Grad-CAM visualization, confidence scoring, and uncertain prediction handling.
 
@@ -8,12 +8,10 @@ Production-ready AI application for brain tumor classification from MRI images, 
 
 ## Live Deployment
 
-After deploying (see [DEPLOYMENT.md](DEPLOYMENT.md)), update the URLs below:
-
 | Component | URL |
 |-----------|-----|
-| **Frontend** (Vercel) | `YOUR_VERCEL_FRONTEND_URL` |
-| **Backend API** (Render) | `YOUR_RENDER_API_URL` |
+| **Frontend** (Vercel) | [https://ai-ml-portfolio-theta.vercel.app](https://ai-ml-portfolio-theta.vercel.app) |
+| **Backend API** (Render) | [https://ai-ml-portfolio-2pio.onrender.com](https://ai-ml-portfolio-2pio.onrender.com) |
 
 ---
 
@@ -48,7 +46,7 @@ After deploying (see [DEPLOYMENT.md](DEPLOYMENT.md)), update the URLs below:
 
 ## Demo Instructions
 
-1. Open the Live Demo URL (after deployment)
+1. Open the [Live Demo](https://ai-ml-portfolio-theta.vercel.app)
 2. Upload a brain MRI image (JPEG or PNG, min 128×128 pixels)
 3. Click **Analyze** and view prediction, confidence, and Grad-CAM overlay
 4. Use Demo buttons (if images are in `/public/demo/`) for quick testing
@@ -168,4 +166,3 @@ MIT — See [LICENSE](LICENSE) for details.
 ## Author
 
 **Abdrakib** — [GitHub](https://github.com/Abdrakib)
-Update deployement trigger
